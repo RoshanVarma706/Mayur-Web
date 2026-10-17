@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { restaurant } from "../data/restaurant";
 import { PhoneIcon } from "./icons";
+import { LogoMark } from "./Logo";
 
 const links = [
   { href: "#signatures", label: "Signatures" },
@@ -24,12 +25,10 @@ export function Nav() {
     <header className={`nav${stuck ? " is-stuck" : ""}`}>
       <div className="container nav__inner">
         <a className="brand" href="#top" aria-label={`${restaurant.name} home`}>
-          <span className="brand__mark" aria-hidden>
-            {restaurant.initials}
-          </span>
+          <LogoMark size={50} className="brand__logo" />
           <span className="brand__text">
-            <span className="brand__name">{restaurant.name}</span>
-            <span className="brand__sub">Vegetarian Kitchen</span>
+            <span className="brand__name">Mayur</span>
+            <span className="brand__sub">Restaurant</span>
           </span>
         </a>
 

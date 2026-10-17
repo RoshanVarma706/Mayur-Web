@@ -1,7 +1,6 @@
 export const restaurant = {
   name: "Mayur Restaurant",
   fullName: "Mayur Restaurant & Banquet",
-  initials: "M",
   tagline: "Vegetarian North Indian & Chinese",
   intro:
     "North Indian, Punjabi and Chinese cooking done the traditional way — hand-ground masalas, slow-simmered gravies and paneer made fresh through the day.",

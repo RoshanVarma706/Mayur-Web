@@ -1,5 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" rx="14" fill="#0d2a20" />
-  <rect x="6.5" y="6.5" width="51" height="51" rx="10" fill="none" stroke="#b98a2e" stroke-width="1.5" />
-  <path d="M18 44V21l14 13 14-13v23" fill="none" stroke="#dfb85c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7e6ab" />
+      <stop offset="0.38" stop-color="#cfa133" />
+      <stop offset="0.6" stop-color="#f2d78f" />
+      <stop offset="0.82" stop-color="#b8881f" />
+      <stop offset="1" stop-color="#e9cc7d" />
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#3d8434" />
+      <stop offset="1" stop-color="#1b5522" />
+    </linearGradient>
+    <clipPath id="disc">
+      <circle cx="32" cy="32" r="24" />
+    </clipPath>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="#0b3018" />
+  <circle cx="32" cy="32" r="27.5" fill="url(#ring)" />
+  <circle cx="32" cy="32" r="24" fill="#fbf5e4" />
+
+  <g clip-path="url(#disc)">
+    <path d="M8 41 Q32 36.5 56 41 L56 58 L8 58 Z" fill="#0f4523" />
+    <path d="M8 41 Q32 36.5 56 41" fill="none" stroke="#e6c877" stroke-width="0.8" />
+  </g>
+
+  <g transform="translate(32 24) scale(0.55)" fill="url(#leaf)" stroke="#cfa133" stroke-width="1.3">
+    <path d="M0 0 V-21 H-12 A9 9 0 0 0 -21 -12 V0 Z" transform="translate(-3.2 -3.2)" />
+    <path d="M0 0 V-21 H-12 A9 9 0 0 0 -21 -12 V0 Z" transform="translate(3.2 -3.2) scale(-1 1)" />
+    <path d="M0 0 V-21 H-12 A9 9 0 0 0 -21 -12 V0 Z" transform="translate(-3.2 3.2) scale(1 -1)" />
+    <path d="M0 0 V-21 H-12 A9 9 0 0 0 -21 -12 V0 Z" transform="translate(3.2 3.2) scale(-1 -1)" />
+  </g>
+
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#fffaf0" stroke-opacity="0.55" stroke-width="0.5" />
 </svg>

@@ -1,4 +1,5 @@
 import { restaurant, whatsappLink } from "../data/restaurant";
+import { LogoBadge } from "./Logo";
 
 const quickLinks = [
   { href: "#signatures", label: "Signatures" },
@@ -14,15 +15,7 @@ export function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div className="footer__brand">
-            <a className="brand" href="#top">
-              <span className="brand__mark" aria-hidden>
-                {restaurant.initials}
-              </span>
-              <span className="brand__text">
-                <span className="brand__name">{restaurant.name}</span>
-                <span className="brand__sub">Est. at Khokhra Circle</span>
-              </span>
-            </a>
+            <LogoBadge size={176} className="footer__logo" />
             <p>
               {restaurant.cuisines.join(" · ")}. A pure vegetarian kitchen and banquet hall serving
               Ahmedabad&rsquo;s Maninagar East neighbourhood.
